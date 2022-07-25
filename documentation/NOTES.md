@@ -22,6 +22,12 @@ export default axios.create({
 ## useForm(); -->> handleSubmit(event)   
 // Note(4) ::  the react-hook-form functions and the futures https://react-hook-form.com/v6/api#handleSubmit
       events // onSubmit
+      
+## setValue() 
+ // Note(5) : This function allows you to dynamically set the value of a registered field and have the options to validate and update the form state.
+   setValue('name', 'value', { shouldValidate: true })
+   
+##    
 -----------------------------------------------------------------------------------------------------------------------
 
 ### react router
