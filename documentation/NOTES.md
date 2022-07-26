@@ -45,10 +45,10 @@ export default axios.create({
 
 ----------------------------------------------------------------------------------------------------------------------
  
- ### There are differences between react v8 and v6 or v7 specially in react-router-dom .. these are some errors reated to the different versions and the solutions 
+ # There are differences between react v8 and v6 or v7 specially in react-router-dom .. these are some errors reated to the different versions and the solutions 
       /Note(1) :: syntax react -v6 or v7 -->> note in version 8 the syntax changed from  ReactDOM.render to ReactDOM.createRoot from 'react-dom/client' .
   
-  # inspector:
+  ### inspector:
      Warnings:
     3)Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API
 
@@ -58,7 +58,7 @@ export default axios.create({
    5)Warning: Received `true` for a non-boolean attribute `exact`.
    exact="true" 
    -----------------------------------------------------
-  # errors:
+  ### errors:
   6)Uncaught Error: A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.
   7)router Error: [nav] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>   
  ------------------------------------------------------
