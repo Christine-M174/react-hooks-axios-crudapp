@@ -45,24 +45,25 @@ export default axios.create({
 
 ----------------------------------------------------------------------------------------------------------------------
  
- ### There are differences between react v8 and v6 specially in react-router-dom .. these are some errors reated to the different versions and the solutions 
-
+ ### There are differences between react v8 and v6 or v7 specially in react-router-dom .. these are some errors reated to the different versions and the solutions 
+      /Note(1) :: syntax react -v6 or v7 -->> note in version 8 the syntax changed from  ReactDOM.render to ReactDOM.createRoot from 'react-dom/client' .
  ## inspector:
-
-  3)Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17.
-
+ Warnings:
+ 3)Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API
 
   4)react-dom.development.js:86 Warning: React does not recognize the `activeStyle` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `activestyle` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
  <NavLink className="nav-link" activestyle={{ fontWeight: 'bold' }} 
 
   5)Warning: Received `true` for a non-boolean attribute `exact`.
    exact="true" 
-
+------------------------------------------
+  errors:
   6)Uncaught Error: A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.
 
   7)router.ts:5 Uncaught Error: [nav] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>   
-
- 8)Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+---------------------------------
+   because of the server is a dummy: "http://localhost:8080/api"
+    8)Failed to load resource: the server responded with a status of 500 (Internal Server Error)
    The 500 code would normally indicate an error on the server, not anything with your code.
 
 
