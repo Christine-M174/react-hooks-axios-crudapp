@@ -1,7 +1,7 @@
 // Note(10) :: // we will use this shred service file in a big projects to share the same methods will be used in many components
 import httpRequest from "../baseURL";
 
-const componentName = ''
+const componentName = '' // refer to the backend  
 
 const getAll = () => {
   return httpRequest.get(`/${componentName}`);

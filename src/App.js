@@ -7,9 +7,14 @@ import PostDetails from './components/PostStoryDetails';
 import DeletePost from './components/DeleteStoryPost';
 import EditPost from './components/EditStoryPost';
 
+import {MovieProvider} from './MovieContext'
+import Nav from './Nav'
+
 const App = () => {
     return (
-        <BrowserRouter>
+       
+       <BrowserRouter>
+           <MovieProvider> <div> <Nav /> </div></MovieProvider>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
                 <NavLink to="/" className="navbar-brand">Posts Manager</NavLink>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">

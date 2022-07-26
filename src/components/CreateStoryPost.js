@@ -22,17 +22,17 @@ const CreateStoryPost = (props) => {
                         <div className="form-group">
                             <label>Título</label>
                             <input type="text" className="form-control" name="title" ref={register({ required: true })} />
-                            <small className="form-text text-danger">{errors.title && 'Título inválido'}</small>
+                            <small className="form-text text-danger">{errors.title && ' invalid title'}</small>
                         </div>
                         <div className="form-group">
                             <label>Author</label>
                             <input type="text" className="form-control" name="author" ref={register({ required: true })} />
-                            <small className="form-text text-danger">{errors.author && 'Autor inválido'}</small>
+                            <small className="form-text text-danger">{errors.author && 'invalid auther '}</small>
                         </div>
                         <div className="form-group">
-                            <label>Conteúdo</label>
+                            <label>Story Body</label>
                             <textarea name="body" cols="30" rows="10" className="form-control" ref={register({ required: true })}></textarea>
-                            <small className="form-text text-danger">{errors.body && 'Conteúdo inválido'}</small>
+                            <small className="form-text text-danger">{errors.body && 'invalid body'}</small>
                         </div>
                         <button type="submit" className="btn btn-primary">Save</button>
                     </form>
